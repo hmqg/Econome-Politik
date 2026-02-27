@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Was ZOLL das? – Zölle & Welthandel</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+     
+
+    :root {
+      --black: #0d0d0d;
+      --gray: #6e6e73;
+      --light-gray: #f5f5f7;
+      --yellow: #ffd400;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #fff7c2, #ffe680);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      color: var(--gray);
+    }
+
+    /* BUTTON */
+    .btn-primary {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 14px 36px;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 120px 15%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .section p {
+      font-size: 1.15rem;
+      color: var(--gray);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* FEATURES */
+    .features .feature-grid {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: var(--light-gray);
+      padding: 40px;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    /* DARK SECTION */
+    .section-dark {
+      background: var(--black);
+    }
+
+    .section-dark h2,
+    .section-dark p {
+      color: white;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--light-gray);
+      padding: 140px 10%;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    .footer-sub {
+      margin-top: 8px;
+    }
+
+    /* ANIMATION */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .section {
+        padding: 100px 8%;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Was ZOLL das?</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="zoelle.html">Zölle</a></li>
+      <li><a href="globalisierung.html">Globalisierung</a></li>
+      <li><a href="handelskonflikte.html">Handelskonflikte</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="quellen.html">Quellen</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+<header class="hero">
+    <div class="hero-content fade-in">
+      <h1>Was ZOLL das?</h1>
+      <link rel="icon" type="image/png" href="econo-me.de-favicon-32.png">
+      <p class="subtitle">Zölle, Handel & Globalisierung verständlich erklärt</p>
+      <a href="#info" class="btn-primary">Mehr erfahren</a>
+ 
+     
+ 
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="section fade-in" id="info">
+    <h2>Was steckt hinter dem Projekt?</h2>
+    <p>
+      „Was ZOLL das?“ ist ein modernes Bildungsprojekt, das Schüler:innen und Lehrkräften
+      die Welt des internationalen Handels näherbringt – einfach erklärt und praxisnah.
+    </p>
+  </section>
+
+
+
+    <!-- CTA -->
+ 
+
+ 
+  <!-- FEATURES MIT LINKS -->
+  <section class="section features fade-in">
+    <h2>Die wichtigsten Themen</h2>
+
+    <div class="feature-grid">
+
+      <a href="zoelle.html" class="feature-card">
+        <div class="icon">📦</div>
+        <h3>Zölle</h3>
+        <p>Warum Staaten Zölle erheben und wie sie Preise & Politik beeinflussen.</p>
+      </a>
+
+      <a href="globalisierung.html" class="feature-card">
+        <div class="icon">🌍</div>
+        <h3>Globalisierung</h3>
+        <p>Wie Länder wirtschaftlich verbunden sind und was das für uns bedeutet.</p>
+      </a>
+
+      <a href="handelskonflikte.html" class="feature-card">
+        <div class="icon">⚖️</div>
+        <h3>Handelskonflikte</h3>
+        <p>Was passiert, wenn Länder sich wirtschaftlich nicht einig sind.</p>
+      </a>
+
+
+      <!-- ⭐ NEUE KARTE: QUELLEN ⭐ --> <a href="quellen.html" class="feature-card"> <div class="icon">📚</div> <h3>Quellen</h3> <p>Alle verwendeten Webseiten & Materialien im Überblick.</p> </a>
+    </div>
+  </section>
+
+<!-- VIDEOS SECTION -->
+<section class="section fade-in">
+  <h2>Lehrreiche Videos zum Welthandel</h2>
+  <p>Vertiefe dein Wissen über Zölle, Globalisierung und Handelskonflikte mit diesen anschaulichen Videos:</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/Qwjr49kvgmc" title="Zölle Einführung" frameborder="0" allowfullscreen></iframe>
+      <p>Einführung in Zölle und ihre Bedeutung für den Handel</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/D8Sw4aVHaRs" title="Globalisierung" frameborder="0" allowfullscreen></iframe>
+      <p>Globalisierung verständlich erklärt</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/aGPABEnTG0g" title="Handelskonflikte" frameborder="0" allowfullscreen></iframe>
+      <p>Handelskonflikte und ihre Auswirkungen</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* für kleine Bildschirme */
+  }
+
+  .video-card {
+    flex: 1 1 calc(33% - 20px); /* drei Spalten nebeneinander, Abstand berücksichtigen */
+    background: #f5f5f7;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .video-card p {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #6e6e73;
+  }
+
+  @media (max-width: 900px) {
+    .video-card {
+      flex: 1 1 100%; /* untereinander auf kleineren Bildschirmen */
+    }
+  }
+</style>
+
+  
+ <section class="cta fade-in">
+    
+    <h2>Bereit für das Welthandels-Quiz?</h2>
+    <p>Teste dein Wissen über den Welthandel – einfach erklärt.</p>
+    <a href="quiz.html" class="btn-primary">Zum Quiz starten</a>
+
+  </section>
+
+
+
+  <!-- ECONO-ME BANNER SECTION -->
+<section class="section fade-in">
+  <h2>Wettbewerb 2025/26</h2>
+  <p>Mehr über den Wettbewerb erfährst du direkt bei econo_me:</p>
+
+  <a href="https://econo-me.de/" target="_blank" style="display:block; margin-top:40px;">
+    <img src="econome.png" 
+         alt="econo_me Wettbewerb 2025/26" 
+         style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 12px 35px rgba(0,0,0,0.15); margin:auto; cursor:pointer;">
+  </a>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 – Was ZOLL das? Bildungsprojekt</p>
+    <p class="footer-sub">In Kooperation mit Bildungspartnern</p>
+    <p class="footer-sub">Gemacht mit Liebe von Kevin, Jendrik, und Peter</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

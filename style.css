@@ -1,0 +1,294 @@
+:root {
+  --black: #0d0d0d;
+  --gray: #6e6e73;
+  --light-gray: #f5f5f7;
+  --yellow: #ffd400;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.7;
+  padding-top: 80px;
+
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #fff7c2, #ffe680);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: var(--gray);
+}
+
+/* BUTTON */
+.btn-primary {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 15%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section p {
+  font-size: 1.15rem;
+  color: var(--gray);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* FEATURES */
+.features .feature-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  background: var(--light-gray);
+  padding: 40px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* DARK SECTION */
+.section-dark {
+  background: var(--black);
+}
+
+.section-dark h2,
+.section-dark p {
+  color: white;
+}
+
+/* CTA */
+.cta {
+  background: var(--light-gray);
+  padding: 140px 10%;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.footer-sub {
+  margin-top: 8px;
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .section {
+    padding: 100px 8%;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+.feature-card {
+  background: var(--light-gray);
+  padding: 40px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd400;
+}
+
+
+
+
+
+/* =========================
+   PREMIUM NAVBAR
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: 0.3s ease;
+}
+
+/* Hover Animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ffd400;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Abstand wegen fixed navbar */
+body {
+  padding-top: 90px;
+}
